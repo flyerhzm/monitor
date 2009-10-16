@@ -11,7 +11,7 @@ class CallStackApp < Sinatra::Base
     while !Controller.instance.push?
       sleep 1
     end
-    "{'msg':'#{Controller.instance.output}'}"
+    "{'msg':'#{Controller.instance.outputs.shift}'}"
   end
   
   get '/javascripts/prototype.js' do
