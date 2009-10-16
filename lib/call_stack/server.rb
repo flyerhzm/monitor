@@ -8,8 +8,10 @@ class CallStackApp < Sinatra::Base
   require 'erb'
   
   get '/call_stack/request' do
-    sleep 10
-    "{'msg':'hello world'}"
+    while !Controller.instance.push?
+      sleep 1
+    end
+    "{'msg':'#{Controller.instance.output}'}"
   end
   
   get '/javascripts/prototype.js' do
@@ -20,5 +22,3 @@ class CallStackApp < Sinatra::Base
     erb :index
   end
 end
-
-CallStackApp.run! :host => 'localhost', :port => 9090
