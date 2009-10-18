@@ -1,12 +1,7 @@
 require 'socket'
 require 'rubygems'
 require 'unroller'
-
-class String
-  def colorize(string, options = {})
-    string
-  end
-end
+require File.dirname(__FILE__) + '/../colored/colored'
 
 class Unroller
   alias_method :origin_initialize, :initialize
