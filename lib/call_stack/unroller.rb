@@ -12,6 +12,7 @@ class Unroller
   alias_method :origin_initialize, :initialize
   def initialize(*args)
     origin_initialize(*args)
+    @@display_style = :concise
     @indent_step = '&nbsp;' + '|'.magenta + '&nbsp;'
     @column_separator = '&nbsp;&nbsp;' + '|'.yellow.bold + '&nbsp;&nbsp;'
     @socket = TCPSocket.open('localhost', '9099')

@@ -1,6 +1,7 @@
 require 'call_stack/unroller'
 
-Unroller::trace
+# Unroller::trace
+Unroller::trace :display_style => :concise
 
 class Test
 	def test
