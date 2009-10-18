@@ -2,10 +2,18 @@ require 'socket'
 require 'rubygems'
 require 'unroller'
 
+class String
+  def colorize(string, options = {})
+    string
+  end
+end
+
 class Unroller
   alias_method :origin_initialize, :initialize
   def initialize(*args)
     origin_initialize(*args)
+    @indent_step = '&nbsp;' + '|'.magenta + '&nbsp;'
+    @column_separator = '&nbsp;&nbsp;' + '|'.yellow.bold + '&nbsp;&nbsp;'
     @socket = TCPSocket.open('localhost', '9099')
   end
   

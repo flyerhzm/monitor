@@ -11,11 +11,11 @@ class CallStackApp < Sinatra::Base
     while !Controller.instance.push?
       sleep 1
     end
-    "{'msg':'#{Controller.instance.outputs.shift}'}"
+    "<div>#{Controller.instance.outputs.shift}</div>"
   end
   
-  get '/javascripts/prototype.js' do
-    send_file File.dirname(__FILE__) + '/static/javascripts/prototype.js'
+  get '/javascripts/jquery-1.3.2.min.js' do
+    send_file File.dirname(__FILE__) + '/static/javascripts/jquery-1.3.2.min.js'
   end
   
   get '/call_stack' do
