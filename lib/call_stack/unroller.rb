@@ -10,6 +10,7 @@ class Unroller
     @@display_style = :concise
     @indent_step = '&nbsp;' + '|'.magenta + '&nbsp;'
     @column_separator = '&nbsp;&nbsp;' + '|'.yellow.bold + '&nbsp;&nbsp;'
+    @screen_width = 99999
     @socket = TCPSocket.open('localhost', '9099')
   end
   
