@@ -10,7 +10,7 @@
     function connect() {
       jQuery.get('/call_stack/request?' + new Date().getTime(), function(data) {
         $('#target').append(data);
-        setTimeout("connect()", 500);
+        connect();
       });
     }
     connect(); 
