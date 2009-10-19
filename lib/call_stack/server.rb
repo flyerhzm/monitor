@@ -22,7 +22,7 @@ class CallStackApp < Sinatra::Base
     send_file File.dirname(__FILE__) + '/static/stylesheets/call_stack.css'
   end
   
-  get '/call_stack' do
+  get '/' do
     erb :index
   end
 end
