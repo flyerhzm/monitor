@@ -22,8 +22,8 @@ class MonitorApp < Sinatra::Base
     send_file File.dirname(__FILE__) + '/static/javascripts/monitor.js'
   end
   
-  get '/stylesheets/call_stack.css' do
-    send_file File.dirname(__FILE__) + '/static/stylesheets/call_stack.css'
+  get '/stylesheets/monitor.css' do
+    send_file File.dirname(__FILE__) + '/static/stylesheets/monitor.css'
   end
   
   get '/' do
