@@ -17,6 +17,10 @@ class MonitorApp < Sinatra::Base
   get '/javascripts/jquery-1.3.2.min.js' do
     send_file File.dirname(__FILE__) + '/static/javascripts/jquery-1.3.2.min.js'
   end
+
+  get '/javascripts/monitor.js' do
+    send_file File.dirname(__FILE__) + '/static/javascripts/monitor.js'
+  end
   
   get '/stylesheets/call_stack.css' do
     send_file File.dirname(__FILE__) + '/static/stylesheets/call_stack.css'
