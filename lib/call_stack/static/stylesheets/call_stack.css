@@ -1,0 +1,12 @@
+body {background-color: grey;}
+.black {color: black;}
+.red {color: red;}
+.green {color: green;}
+.yellow {color: yellow;}
+.blue {color: blue;}
+.magenta {color: magenta;}
+.cyan {color: cyan;}
+.white {color: white;}
+
+.bold {font-weight: bold;}
+.underline {text-decoration: underline;}

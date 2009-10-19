@@ -18,6 +18,10 @@ class CallStackApp < Sinatra::Base
     send_file File.dirname(__FILE__) + '/static/javascripts/jquery-1.3.2.min.js'
   end
   
+  get '/stylesheets/call_stack.css' do
+    send_file File.dirname(__FILE__) + '/static/stylesheets/call_stack.css'
+  end
+  
   get '/call_stack' do
     erb :index
   end
