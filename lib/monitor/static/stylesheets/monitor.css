@@ -14,3 +14,7 @@ body {background-color: black; color: white;}
 
 .indent {margin-right: 10px;}
 .column {margin: 0 10px;}
+
+.folder > .indent {background: url('/images/icons.png') no-repeat 0px 2px;}
+.folder.collapse > .indent {background: url('/images/icons.png') no-repeat 0px -10px;}
+.folder > .indent, .folder.collapse > .indent {width: 10px; height: 12px; display: inline-block; text-indent: -99999px; margin-right: 2px;}

@@ -26,6 +26,10 @@ class MonitorApp < Sinatra::Base
     send_file File.dirname(__FILE__) + '/static/stylesheets/monitor.css'
   end
   
+  get '/images/icons.png' do
+    send_file File.dirname(__FILE__) + '/static/images//icons.png'
+  end
+  
   get '/' do
     erb :index
   end
