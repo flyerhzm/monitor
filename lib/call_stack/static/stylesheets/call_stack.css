@@ -1,4 +1,5 @@
 body {background-color: black; color: white;}
+
 .black {color: black;}
 .red {color: red;}
 .green {color: green;}
@@ -10,3 +11,6 @@ body {background-color: black; color: white;}
 
 .bold {font-weight: bold;}
 .underline {text-decoration: underline;}
+
+.indent {margin-right: 10px;}
+.column {margin: 0 10px;}
