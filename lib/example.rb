@@ -1,4 +1,4 @@
-require 'call_stack/unroller'
+require 'monitor/unroller'
 
 # Unroller::trace
 Unroller::trace :display_style => :concise

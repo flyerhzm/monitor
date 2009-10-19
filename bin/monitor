@@ -1,9 +1,9 @@
 #! /usr/bin/env ruby
 
-require 'call_stack'
+require 'monitor'
 require 'thread'
 
 Thread.start do 
   UnrollerServer.new.run 
 end
-CallStackApp.run! :host => 'localhost', :port => 9090
+MonitorApp.run! :host => 'localhost', :port => 9090

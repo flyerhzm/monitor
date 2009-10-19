@@ -11,14 +11,14 @@ Spec::Rake::SpecTask.new(:spec) do |t|
 end
 
 Jeweler::Tasks.new do |gemspec|
-  gemspec.name = 'call_stack'
-  gemspec.summary = 'call_stack is a ruby gem to display method call stack in browser.'
-  gemspec.description = 'call_stack is a ruby gem to display method call stack in browser.'
+  gemspec.name = 'monitor'
+  gemspec.summary = 'monitor is a ruby gem to monitor method call stacks in browser.'
+  gemspec.description = 'monitor is a ruby gem to monitor method call stacks in browser.'
   gemspec.email = 'flyerhzm@gmail.com'
   gemspec.homepage = ''
   gemspec.authors = ['Richard Huang']
   gemspec.files.exclude '.gitignore'
-  gemspec.executables << 'call_stack'
+  gemspec.executables << 'monitor'
 end
 Jeweler::GemcutterTasks.new
 

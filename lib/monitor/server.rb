@@ -1,13 +1,13 @@
 require 'rubygems'
 require 'sinatra'
 
-class CallStackApp < Sinatra::Base
+class MonitorApp < Sinatra::Base
   set :public, File.dirname(__FILE__) + '/static'
   set :views, File.dirname(__FILE__) + '/templates'
   
   require 'erb'
   
-  get '/call_stack/request' do
+  get '/monitor/request' do
     while !Controller.instance.push?
       sleep 1
     end

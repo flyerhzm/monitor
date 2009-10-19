@@ -4,16 +4,15 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{call_stack}
+  s.name = %q{monitor}
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Richard Huang"]
   s.date = %q{2009-10-19}
-  s.default_executable = %q{call_stack}
-  s.description = %q{call_stack is a ruby gem to display method call stack in browser.}
+  s.description = %q{monitor is a ruby gem to monitor method call stacks in browser.}
   s.email = %q{flyerhzm@gmail.com}
-  s.executables = ["call_stack"]
+  s.executables = ["monitor", "monitor"]
   s.extra_rdoc_files = [
     "README.textile"
   ]
@@ -23,14 +22,6 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "init.rb",
-     "lib/call_stack.rb",
-     "lib/call_stack/controller.rb",
-     "lib/call_stack/server.rb",
-     "lib/call_stack/static/javascripts/jquery-1.3.2.min.js",
-     "lib/call_stack/static/stylesheets/call_stack.css",
-     "lib/call_stack/templates/index.erb",
-     "lib/call_stack/unroller.rb",
-     "lib/call_stack/unroller_server.rb",
      "lib/colored/colored.rb",
      "lib/example.rb",
      "spec/colored_spec.rb",
@@ -41,7 +32,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{call_stack is a ruby gem to display method call stack in browser.}
+  s.summary = %q{monitor is a ruby gem to monitor method call stacks in browser.}
   s.test_files = [
     "spec/colored_spec.rb",
      "spec/spec_helper.rb"
