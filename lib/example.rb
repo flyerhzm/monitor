@@ -7,7 +7,13 @@ class Test
 	def test
 		a = 1
 		b = 2
+		another
 	end
+	
+	def another
+	  b = 2
+	  a = 1
+  end
 end
 
 t = Test.new
