@@ -24,10 +24,16 @@ function connect() {
 connect();
 
 $.fn.collapse = function() {
-  $(this).children('div').hide();
-  $(this).addClass('collapse');
+  $(this).addClass('collapse').children('div').hide();
 }
 $.fn.expand = function() {
-  $(this).children('div').show();
-  $(this).removeClass('collapse');
+  $(this).removeClass('collapse').children('div').show();
+}
+
+function collapseAll() {
+  $('.folder').addClass('collapse').children('div').hide();
+}
+
+function expandAll() {
+  $('.folder').removeClass('collapse').children('div').show();
 }

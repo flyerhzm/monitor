@@ -1,6 +1,7 @@
-body {background-color: black; color: white;}
+body {background-color: black; color: white; margin: 0;}
 
-#controller {position: fixed; height: 20px;}
+#controller {position: fixed; height: 20px; line-height: 20px; width: 100%; padding: 0 10px; background-color: grey;}
+#controller a {color: white; margin-left: 20px; text-decoration: none;}
 #target {padding-top: 20px;}
 
 .black {color: black;}
