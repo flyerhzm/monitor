@@ -1,6 +1,6 @@
 require 'thread'
 
-options = {:browser_port => 9090, :unroller_port => 9099, :server => 'thin'}
+options = {:port => 9090, :unroller_port => 9099, :server => 'thin'}
 
 OptionParser.new do |opts|
   opts.banner = "Usage: monitor [options]"
