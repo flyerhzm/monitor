@@ -1,9 +1,4 @@
 #! /usr/bin/env ruby
 
 require 'monitor'
-require 'thread'
-
-Thread.start do 
-  UnrollerServer.new.run 
-end
-MonitorApp.run! :host => 'localhost', :port => 9090
+require 'monitor/command'

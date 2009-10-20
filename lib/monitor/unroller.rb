@@ -7,11 +7,10 @@ class Unroller
   alias_method :origin_initialize, :initialize
   def initialize(*args)
     origin_initialize(*args)
-    @@display_style = :concise
     @indent_step = "<span class='indent'>" + '|'.magenta + "</span>"
     @column_separator = "<span class='column'>" + '|'.yellow.bold + "</span>"
     @screen_width = 99999
-    @socket = TCPSocket.open('localhost', '9099')
+    @socket = TCPSocket.open('localhost', args[:unroller_port] || 9099)
   end
   
   def newline

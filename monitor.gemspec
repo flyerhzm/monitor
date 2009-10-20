@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Richard Huang"]
-  s.date = %q{2009-10-19}
+  s.date = %q{2009-10-20}
   s.description = %q{monitor is a ruby gem to monitor method call stacks in browser.}
   s.email = %q{flyerhzm@gmail.com}
   s.executables = ["monitor", "monitor"]
@@ -25,14 +25,17 @@ Gem::Specification.new do |s|
      "lib/colored/colored.rb",
      "lib/example.rb",
      "lib/monitor.rb",
+     "lib/monitor/command.rb",
      "lib/monitor/controller.rb",
      "lib/monitor/server.rb",
-     "lib/monitor/static/javascripts/jquery-1.3.2.min.js",
-     "lib/monitor/static/stylesheets/call_stack.css",
-     "lib/monitor/templates/index.erb",
      "lib/monitor/unroller.rb",
      "lib/monitor/unroller_server.rb",
      "monitor.gemspec",
+     "public/images/icons.png",
+     "public/index.html",
+     "public/javascripts/jquery-1.3.2.min.js",
+     "public/javascripts/monitor.js",
+     "public/stylesheets/monitor.css",
      "spec/colored_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"

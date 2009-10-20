@@ -1,8 +1,8 @@
 require 'socket'
 
 class UnrollerServer
-  def initialize
-    @socket = TCPServer.open('9099')
+  def initialize(unroller_port = 9099)
+    @socket = TCPServer.open(unroller_port)
   end
   
   def run
