@@ -4,8 +4,6 @@ require 'sinatra'
 class MonitorApp < Sinatra::Base
   set :static, true
   set :public, Proc.new { File.expand_path(File.dirname(__FILE__) + '/../../public') }
-  puts Proc.new { File.expand_path(File.dirname(__FILE__) + '/../../public') }
-  
   
   get '/monitor/request' do
     while !Controller.instance.push?
