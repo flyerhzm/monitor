@@ -10,7 +10,9 @@ class Unroller
     @indent_step = "<span class='indent'>" + '|'.magenta + "</span>"
     @column_separator = "<span class='column'>" + '|'.yellow.bold + "</span>"
     @screen_width = 99999
-    @socket = TCPSocket.open('localhost', args[:unroller_port] || 9099)
+    
+    options = *args
+    @socket = TCPSocket.open('localhost', options[:unroller_port] || 9099)
   end
   
   def newline
