@@ -11,4 +11,8 @@ class MonitorApp < Sinatra::Base
     end
     "<div>#{Controller.instance.outputs.shift}</div>"
   end
+  
+  get '/' do
+    redirect '/index.html'
+  end
 end
