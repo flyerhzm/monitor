@@ -1,1 +1,60 @@
 h1. monitor
+
+Monitor gem can display ruby methods call stack on browser based on "unroller":http://unroller.rubyforge.org/
+
+******************************************************
+
+h2. Install
+
+<pre><code>
+gem install monitor --source http://gemcutter.org
+</code></pre>
+
+******************************************************
+
+h2. Usage
+
+* Start a server for monitoring ruby methods call
+
+<pre><code>
+$ monitor
+</code></pre>
+
+* Add monitor to source codes
+
+<pre><code>
+require 'rubygems'
+require 'monitor/unroller'
+
+Unroller::trace :display_style => :concise
+</code></pre>
+
+* Then run the source codes and see the methods call stack on browser <code>http://localhost:9090</code>
+
+******************************************************
+
+h2. Advance
+
+1. monitor is a server based on Sinatra, you can change default port (9090) and server (thin) by 
+
+<pre><code>
+$ monitor -p 8080 -s mongrel
+</code></pre>
+
+2. monitor uses sockets to communicate to source codes, you can change default socket port (9099) by
+
+<pre><code>
+$ monitor -u 8088
+</code></pre>
+
+and meantime change the client socket port by
+
+<pre><code>
+Unroller::trace :display_style => :concise, :unroller_port => 9099
+</code></pre>
+
+3. There're also a lot of options for unroller gem, check them on "http://unroller.rubyforge.org/":http://unroller.rubyforge.org/
+
+**********************************************************
+
+Copyright (c) 2009 Richard Huang (flyerhzm@gmail.com), released under the MIT license
