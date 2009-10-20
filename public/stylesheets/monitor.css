@@ -2,6 +2,7 @@ body {background-color: black; color: white; margin: 0;}
 
 #controller {position: fixed; height: 20px; line-height: 20px; width: 100%; padding: 0 10px; background-color: grey;}
 #controller a {color: white; margin-left: 20px; text-decoration: none;}
+#controller .auto-scroll {margin-left: 20px;}
 #target {padding-top: 20px;}
 
 .black {color: black;}

@@ -18,6 +18,7 @@ function connect() {
     if ($target.attr('id') != 'target')
       $target.addClass('folder');
       
+    autoScroll();
     connect();
   });
 }
@@ -36,4 +37,10 @@ function collapseAll() {
 
 function expandAll() {
   $('.folder').removeClass('collapse').children('div').show();
+}
+
+function autoScroll() {
+  if ($('input[name=autoScroll]').attr('checked')) {
+    $("body").attr({ scrollTop: $("body").attr("scrollHeight") });
+  }
 }
