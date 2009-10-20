@@ -12,7 +12,7 @@ function connect() {
     count = $data.find('.indent').size();
     $target = $('#target');
     for (var i = 0; i < count -1; i++) {
-      $target = $('#target').children('div:last-child');
+      $target = $target.children('div:last-child');
     }
     $target.append($data);
     if ($target.attr('id') != 'target')
