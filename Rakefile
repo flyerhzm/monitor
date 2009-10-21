@@ -18,6 +18,8 @@ Jeweler::Tasks.new do |gemspec|
   gemspec.homepage = ''
   gemspec.authors = ['Richard Huang']
   gemspec.files.exclude '.gitignore'
+  gemspec.add_dependency 'sinatra'
+  gemspec.add_dependency 'unroller'
   gemspec.executables << 'monitor'
 end
 Jeweler::GemcutterTasks.new
