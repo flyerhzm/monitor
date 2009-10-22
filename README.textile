@@ -33,6 +33,48 @@ Unroller::trace :display_style => :concise
 
 ******************************************************
 
+h2. Example
+
+1. start monitor server
+<pre><code>
+$ monitor
+</code></pre>
+
+2. create an example <code>test.rb</code>
+<pre></code>
+require 'monitor/unroller'
+
+Unroller::trace :display_style => :concise
+
+class Test
+	def test
+		a = 1
+		b = 2
+		another
+	end
+	
+	def another
+	  b = 2
+	  a = 1
+  end
+end
+
+t = Test.new
+t.test
+</code></pre>
+
+3. run the example
+<pre><code>
+ruby test.rb
+</code></pre>
+
+4. check in browser <code>http://localhost:9090</code>
+
+See the result
+!http://www.huangzhimin.com/images/monitor.gif!
+
+******************************************************
+
 h2. Advance
 
 1. monitor is a server based on Sinatra, you can change default port (9090) and server (thin) by 
