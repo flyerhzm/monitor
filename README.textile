@@ -47,15 +47,15 @@ require 'monitor/unroller'
 Unroller::trace :display_style => :concise
 
 class Test
-	def test
-		a = 1
-		b = 2
-		another
-	end
-	
-	def another
-	  b = 2
-	  a = 1
+  def test
+    a = 1
+    b = 2
+    another
+  end
+
+  def another
+    b = 2
+    a = 1
   end
 end
 
