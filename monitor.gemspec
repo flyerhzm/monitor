@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Richard Huang"]
-  s.date = %q{2009-10-21}
+  s.authors = ["Richard 
+  s.date = %q{2009-10-23}
   s.description = %q{monitor is a ruby gem to monitor method call stacks in browser.}
   s.email = %q{flyerhzm@gmail.com}
   s.executables = ["monitor", "monitor"]
