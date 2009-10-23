@@ -1,4 +1,5 @@
 require 'thread'
+require 'optparse'
 
 options = {:port => 9090, :unroller_port => 9099, :server => 'thin'}
 
