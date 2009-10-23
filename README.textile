@@ -41,7 +41,7 @@ $ monitor
 </code></pre>
 
 2. create an example <code>test.rb</code>
-<pre></code>
+<pre><code>
 require 'monitor/unroller'
 Unroller::trace :display_style => :concise
 class Test
