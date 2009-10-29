@@ -39,6 +39,10 @@ function expandAll() {
   $('.folder').removeClass('collapse').children('div').show();
 }
 
+function clearAll() {
+  $('#target').html('');
+}
+
 function autoScroll() {
   if ($('input[name=autoScroll]').attr('checked')) {
     $("body").attr({ scrollTop: $("body").attr("scrollHeight") });
